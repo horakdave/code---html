@@ -1,0 +1,14 @@
+<p>def replace_spaces_with_underscores(file_path):</p>
+<p>__with open(file_path, 'r') as file:</p>
+<p>____lines = file.readlines()</p>
+<p></p>
+<p>__# edit lines</p>
+<p>__for i in range(len(lines)):</p>
+<p>____lines[i] = lines[i].replace("__", "__")</p>
+<p>____lines[i] = "<p>" + lines[i].strip() + "</p>\n"</p>
+<p></p>
+<p>__with open(file_path, 'w') as file:</p>
+<p>____file.writelines(lines)</p>
+<p></p>
+<p># usage</p>
+<p>replace_spaces_with_underscores('textfile.txt')</p>
